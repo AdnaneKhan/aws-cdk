@@ -6827,6 +6827,14 @@
         "STANDARD_INFREQUENT_ACCESS"
       ]
     },
+    "MultiRegionConsistency": {
+      "path": "aws-cdk/packages/aws-cdk-lib/aws-dynamodb/lib/shared.ts",
+      "enumLike": false,
+      "values": [
+        "EVENTUAL",
+        "STRONG"
+      ]
+    },
     "TableEncryption": {
       "path": "aws-cdk/packages/aws-cdk-lib/aws-dynamodb/lib/shared.ts",
       "enumLike": false,
@@ -6985,6 +6993,14 @@
         "EXTERNAL"
       ]
     },
+    "DeploymentStrategy": {
+      "path": "aws-cdk/packages/aws-cdk-lib/aws-ecs/lib/base/base-service.ts",
+      "enumLike": false,
+      "values": [
+        "ROLLING",
+        "BLUE_GREEN"
+      ]
+    },
     "PropagatedTagSource": {
       "path": "aws-cdk/packages/aws-cdk-lib/aws-ecs/lib/base/base-service.ts",
       "enumLike": false,
@@ -7129,6 +7145,19 @@
       "values": [
         "enabled",
         "disabled"
+      ]
+    },
+    "DeploymentLifecycleStage": {
+      "path": "aws-cdk/packages/aws-cdk-lib/aws-ecs/lib/deployment-lifecycle-hook-target.ts",
+      "enumLike": false,
+      "values": [
+        "RECONCILE_SERVICE",
+        "PRE_SCALE_UP",
+        "POST_SCALE_UP",
+        "TEST_TRAFFIC_SHIFT",
+        "POST_TEST_TRAFFIC_SHIFT",
+        "PRODUCTION_TRAFFIC_SHIFT",
+        "POST_PRODUCTION_TRAFFIC_SHIFT"
       ]
     },
     "EnvironmentFileType": {

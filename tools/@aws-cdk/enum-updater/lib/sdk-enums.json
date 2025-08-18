@@ -194,6 +194,15 @@
       "JSON_SCHEMA",
       "LAMBDA"
     ],
+    "State": [
+      "BAKING",
+      "VALIDATING",
+      "DEPLOYING",
+      "COMPLETE",
+      "ROLLING_BACK",
+      "ROLLED_BACK",
+      "REVERTED"
+    ],
     "GrowthType": [
       "EXPONENTIAL",
       "LINEAR"
@@ -2969,6 +2978,7 @@
       "TLSv1.2_2018",
       "TLSv1.2_2019",
       "TLSv1.2_2021",
+      "TLSv1.3_2025",
       "TLSv1_2016"
     ],
     "SslSupportMethod": [
@@ -3196,6 +3206,7 @@
   },
   "codeconnections": {
     "ProviderType": [
+      "AzureDevOps",
       "Bitbucket",
       "GitHub",
       "GitHubEnterpriseServer",
@@ -7845,7 +7856,8 @@
     ],
     "AssetModelType": [
       "ASSET_MODEL",
-      "COMPONENT_MODEL"
+      "COMPONENT_MODEL",
+      "INTERFACE"
     ],
     "DataType": [
       "STRING",
@@ -9749,6 +9761,11 @@
       "ALERT",
       "REJECT"
     ],
+    "SummaryRuleOption": [
+      "SID",
+      "MSG",
+      "METADATA"
+    ],
     "TCPFlag": [
       "FIN",
       "SYN",
@@ -9827,6 +9844,17 @@
       "AWS::InternetMonitor::Monitor",
       "AWS::ApplicationSignals::Service",
       "AWS::ApplicationSignals::ServiceLevelObjective"
+    ]
+  },
+  "observabilityadmin": {
+    "DestinationType": [
+      "cloud-watch-logs"
+    ],
+    "ResourceType": [
+      "AWS::EC2::VPC"
+    ],
+    "TelemetryType": [
+      "Logs"
     ]
   },
   "odb": {
@@ -10310,6 +10338,10 @@
     ]
   },
   "pcs": {
+    "NetworkType": [
+      "IPV4",
+      "IPV6"
+    ],
     "Type": [
       "SLURMCTLD",
       "SLURMDBD"
@@ -11899,6 +11931,7 @@
     ],
     "ClientPasswordAuthType": [
       "MYSQL_NATIVE_PASSWORD",
+      "MYSQL_CACHING_SHA2_PASSWORD",
       "POSTGRES_SCRAM_SHA_256",
       "POSTGRES_MD5",
       "SQL_SERVER_AUTHENTICATION"
@@ -12611,6 +12644,9 @@
       "RollingBack",
       "SystemUpdating",
       "Updating"
+    ],
+    "NodeProvisioningMode": [
+      "Continuous"
     ],
     "NodeRecovery": [
       "Automatic",
@@ -15207,6 +15243,33 @@
     ],
     "RendererType": [
       "AppStream"
+    ],
+    "Event": [
+      "WebsiteInteract",
+      "FileDownloadFromSecureBrowserToRemoteDisk",
+      "FileTransferFromRemoteToLocalDisk",
+      "FileTransferFromLocalToRemoteDisk",
+      "FileUploadFromRemoteDiskToSecureBrowser",
+      "ContentPasteToWebsite",
+      "ContentTransferFromLocalToRemoteClipboard",
+      "ContentCopyFromWebsite",
+      "UrlLoad",
+      "TabOpen",
+      "TabClose",
+      "PrintJobSubmit",
+      "SessionConnect",
+      "SessionStart",
+      "SessionDisconnect",
+      "SessionEnd",
+      "UrlBlockByContentFilter"
+    ],
+    "FolderStructure": [
+      "Flat",
+      "NestedByDate"
+    ],
+    "LogFileFormat": [
+      "JSONLines",
+      "Json"
     ],
     "EnabledType": [
       "Disabled",
